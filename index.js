@@ -2,7 +2,7 @@ const {writeFileSync, readFileSync, unlinkSync} = require('fs');
 const {parse} = require('path');
 const {S3} = require('aws-sdk');
 const {convertTo, canBeConvertedToPDF} = require('@shelf/aws-lambda-libreoffice');
-const DEFAULT_BUCKET_NAME = 'nsi-lambda-libreoffice';ì
+const DEFAULT_BUCKET_NAME = 'forwork-data'; //'nsi-lambda-libreoffice';
 const DEFAULT_S3 = new S3({params: {Bucket: DEFAULT_BUCKET_NAME}});
 
 exports.handler = async event => {
