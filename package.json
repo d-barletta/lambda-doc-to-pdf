@@ -1,5 +1,5 @@
 {
-  "name": "libreoffice-file-converter",
+  "name": "lambda-libreoffice-file-converter",
   "version": "1.0.0",
   "description": "Aws lambda function to convert s3 files to base64 pdf",
   "main": "index.js",
