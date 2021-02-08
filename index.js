@@ -7,11 +7,11 @@ const DEFAULT_S3 = new S3({params: {Bucket: DEFAULT_BUCKET_NAME}});
 
 exports.handler = async event => {
   const RESPONSE = {
-    body: '',
+    statusCode: 201,
     headers: {
       'Content-Type': 'text/plain',
     },
-    statusCode: 200,
+    body: '',
   };
 
   try {
