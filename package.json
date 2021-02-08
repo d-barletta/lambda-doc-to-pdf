@@ -1,0 +1,25 @@
+{
+  "name": "libreoffice-file-converter",
+  "version": "1.0.0",
+  "description": "Aws lambda function to convert s3 files to base64 pdf ",
+  "main": "index.js",
+  "engines": {
+    "node": "12.18.1",
+    "npm": "6.14.5"
+  },
+  "scripts": {
+    "build-lambda": "zip -9 -r -X deploy/lambdaFunc.zip . -x '.prettierrc' '.prettierignore' '.gitignore' '.git/*'"
+  },
+  "dependencies": {
+    "@shelf/aws-lambda-libreoffice": "^3.0.8",
+    "aws-sdk": "^2.839.0"
+  },
+  "keywords": [
+    "lambda",
+    "libreoffice",
+    "pdf",
+    "docx"
+  ],
+  "author": "d.barletta",
+  "license": "ISC"
+}
